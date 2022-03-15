@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { NavLink } from 'react-router-dom';
 import '../style/company.css';
 import arrow from '../assets/arrow_circle_right.svg';
 import bg from '../assets/bg.png';
@@ -11,7 +12,9 @@ const Company = ({
 }) => (
   <div className="company-card">
     <div className="company-card-arrow-right">
-      <img src={arrow} alt="arrow-right" />
+      <NavLink to={`/${symbol}`}>
+        <img src={arrow} alt="arrow-right" />
+      </NavLink>
     </div>
     <div>
       <h2 className="company-card-title">
