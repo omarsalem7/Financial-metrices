@@ -13,7 +13,10 @@ const ErrorPage = () => {
         </div>
         <div className="footer">
           <button
-            onClick={() => navigate('')}
+            onClick={() => {
+              navigate('/');
+              window.location.reload();
+            }}
             type="button"
             className="error-btn"
           >
