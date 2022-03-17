@@ -1,0 +1,16 @@
+.companies-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 600px) {
+  .companies-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .companies-list {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
