@@ -1,7 +1,5 @@
-import stockReducer from '../redux/stock/stock';
+import stockReducer, { fetchMetrices, fetchMetricesSuccess } from '../redux/stock/stock';
 import * as actionTypes from '../redux/stock/stock';
-import { fetchMetrices } from '../redux/stock/stock';
-import { fetchMetricesSuccess } from '../redux/stock/stock';
 
 const mockData = [
   {
@@ -104,7 +102,6 @@ describe('stock reducer', () => {
   });
 
   test('check if actions to cryptos', () => {
-    const initial = {};
     expect(
       stockReducer(
         {
