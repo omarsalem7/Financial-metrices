@@ -8,8 +8,8 @@
 > Stock Metrics is a web(mobile-focused) software for monitoring the stock exchange's listed firms and seeing their live metrics. It uses data from the Financial Modeling API. 
 
 
-## Live demo: It will be available after the project is approved
-
+## Live demo
+[Metrics-App](https://metrics-app-v1.netlify.app/)
 
 ## Built With
 
