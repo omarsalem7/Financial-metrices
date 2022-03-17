@@ -1,16 +1,16 @@
 import axios from 'axios';
 
 const FETCH_STOCK_METRICES_REQUEST = 'FETCH_STOCK_METRICES_REQUEST';
-const FETCH_STOCK_METRICES_SUCCESS = 'FETCH_STOCK_METRICES_SUCCESS';
-const FETCH_STOCK_METRICES_FAILURE = 'FETCH_STOCK_METRICES_FAILURE';
-const SEARCH_QUERY = 'SEARCH_QUERY';
+export const FETCH_STOCK_METRICES_SUCCESS = 'FETCH_STOCK_METRICES_SUCCESS';
+export const FETCH_STOCK_METRICES_FAILURE = 'FETCH_STOCK_METRICES_FAILURE';
+export const SEARCH_QUERY = 'SEARCH_QUERY';
 
 export const searchQuery = (query) => ({
   type: SEARCH_QUERY,
   payload: query,
 });
 
-const fetchMetricesSuccess = (metrices) => ({
+export const fetchMetricesSuccess = (metrices) => ({
   type: FETCH_STOCK_METRICES_SUCCESS,
   payload: metrices,
 });

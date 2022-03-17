@@ -38,20 +38,17 @@ const CompniesList = () => {
   return (
     <>
       <div className="companies-list">
-        {filterDataSeacrh.map(
-          ({
-            symbol, name, change, price, changesPercentage,
-          }) => (
-            <Company
-              key={symbol}
-              symbol={symbol}
-              name={name}
-              change={change}
-              price={price}
-              changesPercentage={changesPercentage}
-            />
-          ),
-        )}
+        {filterDataSeacrh.map(({
+          symbol, name, change, price,
+        }) => (
+          <Company
+            key={symbol}
+            symbol={symbol}
+            name={name}
+            change={change}
+            price={price}
+          />
+        ))}
       </div>
     </>
   );
