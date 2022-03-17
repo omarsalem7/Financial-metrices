@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { Bar } from 'react-chartjs-2';
 
 const BarChart = ({ result }) => {
-  console.log(Chart);
+  Chart.register();
   const data = {
     labels: [2017, 2018, 2019, 2020, 2021],
     datasets: [
